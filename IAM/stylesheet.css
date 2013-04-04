@@ -1,0 +1,620 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+body {
+	line-height:1;
+}
+ol, ul {
+	list-style:none;
+}
+blockquote, q {
+	quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:'';
+	content:none;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+/*end of reset*/
+
+/*.home is the class for body*/
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.home {
+	width: 90%;
+	background: URL("images/shattered.png");
+	border-box: 300px 20px 0px;
+	font-family:"Franklin Gothic", "Franklin Gothic Medium", 
+		Helvetica, "Helvetica Nue", Arial, sans-serif;
+	font-size:1em;
+	color:#000;
+	margin:10px auto 0px;
+}
+
+.top_header {
+	width:100%;
+	overflow:hidden;
+	margin-bottom:15px;
+}
+
+.ccc_logo {	
+	display:inline;
+}
+
+.ccc_logo_img {
+	max-width:75%;
+	height:auto;
+}
+
+.iam_logo {
+	display:inline;
+	vertical-align:bottom;
+}
+
+.iam_logo_img {
+	max-width:20%;
+	height:auto;
+	float:right;
+}
+
+.main_nav {
+	margin:20px 0px;
+	font-weight:300;
+}
+
+.link_block {
+	display:block;
+}
+
+.arrow_down, .arrow_down1 {
+	margin-right:5px;
+	float:right;
+}
+
+.main_nav a {
+	padding:5px 0px; /*hopefully big enough to touch*/
+    width:100%;
+    height:100%;
+	text-decoration:none;
+	color:#00a4e4;
+}
+
+.main_nav li {
+	width:100%;
+	background:#222;
+	text-transform:uppercase;
+	line-height:1.5em;
+	margin:5px 0px; /*space between li*/
+}
+
+.main_nav a:hover, .main_nav a:focus {
+	color:#fff;
+	background:#00a4e4;
+}
+
+.main_nav_title.dropdown {
+	background:#444;
+	color:#fff;
+}
+
+.main_nav_title.dropdown a:hover {
+	background:#00a4e4;
+	color:#fff;
+}
+
+.main_nav_sub>.link_block {
+	color: #666;
+}
+
+.main_nav_list{
+	text-indent:10px;
+}
+
+.iam_h1 {
+	margin:20px 0px;
+	font-size:1.7rem;
+	text-align:center;
+	color:#333;
+}
+
+.iam_h2 {
+	font-size:1.5rem;
+}
+
+h4{
+	font-size:1.2rem;
+}
+
+.login {
+	text-align:center;
+}
+
+.iam_nav {
+	margin:20px 0px;
+}
+
+.iam_nav li {
+	width:100%;
+	background:#222;
+	line-height:1.5em;
+	text-transform:uppercase;
+	margin:3px 0px; /*space between li*/
+	font-weight:300;
+	position:relative;
+}
+
+.iam_nav a {
+	padding:5px 0px; /*big enough to touch*/
+    height:100%;
+	text-decoration:none;
+	text-indent:10px;
+}
+
+.iam_nav a:hover {
+	color:#fff; 
+}
+
+.iam_nav_sub {
+	text-indent:15px;
+}
+
+.programs_of_study {
+	color:#00a4e4;
+}
+
+.programs_of_study_list .iam_nav_sub a {
+	background:#333;
+	color:#00a4e4;
+}
+
+.programs_of_study_list .iam_nav_sub a:hover {
+	background:#00a4e4;
+	color:#222; 
+}
+
+.for_students {
+	color:#ffcf01;
+}
+
+.for_students_list .iam_nav_sub a {
+	background:#333;
+	color:#ffcf01;
+}
+
+.for_students_list .iam_nav_sub a:hover {
+	background:#ffcf01;
+	color:#222;
+}
+
+.facilities {
+	color:#7b2b83;
+}
+
+.facilities_list .iam_nav_sub a {
+	background:#333;
+	color:#7b2b83;	
+}
+
+.facilities_list .iam_nav_sub a:hover {
+	background:#7b2b83;
+	color:#222;
+}
+
+.support {
+	color:#f57b20; /*I switched the orange and purple here. I hate the purple on the grey  , so I put it on facilites which is a much smaller list and easier for me to deal with. But, I think this is my fault because I said I didn't want orange and blue next to each other. My bad. ;)*/
+}
+
+.support_list .iam_nav_sub a {
+	background:#333;
+	color:#f57b20;
+}
+
+.support_list .iam_nav_sub a:hover {
+	background:#f57b20;
+	color:#222;
+}
+
+.contact {
+	color:#00a4e4;
+}
+
+.contact_list .iam_nav_sub a {
+	background:#333;
+	color:#00a4e4;
+}
+
+.contact_list .iam_nav_sub a:hover {
+	background:#00a4e4;
+	color:#222;
+}
+
+.login {
+	margin:20px 0px;
+}
+
+.login_box {
+	margin:5px 0px;
+	width:99%;
+	height:30px;
+	font-size:1rem;
+}
+
+.login_box.button {
+	background: #d1d1d1;
+	color: #333;
+	width:80%;
+	height:30px;
+	font-weight:300;
+	border-radius: 8px;
+}
+
+.slideshow, .student_work, .events, .tweets {
+	display:none;
+}
+
+/*content code starts*/
+.events, .tweets{
+	margin-top:20px;
+}
+
+.gallery {
+	margin-top: 2rem;
+	background: #d1d1d1;
+	border:10px double #d1d1d1;
+}
+
+.image {
+	width: 100%;
+	border: 1px solid #000;
+	margin-bottom: 10px;
+	height:450px;
+}
+
+.SW_header, .IT_header, .E_header, .iam_h2 {
+	background:#222;
+	margin-bottom:10px;
+	padding:10px;
+	font-size:0.9rem;
+	color:#fff;
+}
+
+.content_header1 {font-size: 2rem; color: #f57b20;}
+.content_header2 {font-size: 2rem; color: #ffcf01;}
+.content_header3 {font-size: 2rem; color: #00a4e4;}
+.content_header4 {font-size: 2rem; color: #fff;}
+
+
+.SW_header>a, .IT_header>a, .E_header>a{
+	color:#fff;
+	text-decoration:none;
+}
+
+.student_work{
+	margin-top:25px;
+}
+
+.sw_images{
+	width:100%;
+	-webkit-column-count:3;
+	-moz-column-count:3;
+	column-count:3;
+}
+
+.sw_img, .events_list{
+	width:100%;
+}
+
+.event {
+	float:left;
+	width: 40%;
+	padding:20px;
+	margin-top: 10px;
+	margin-right: 10px;
+	color: #333;
+}
+
+.event a{
+	color: #7b2b83;
+}
+
+.event a:hover{
+	color: #666;
+}
+
+.iam-twitter{
+	padding: 20px;
+	margin-top: 10px;
+	background: #d1d1d1;
+	color: #333;
+}
+
+.iam-twitter a{
+	color: #7b2b83;
+}
+
+.iam-twitter a:hover{
+	color: #666;
+}
+
+/*content code ends*/
+
+.page_footer {
+	display:inline-block;
+	width:100%;
+	line-height:1.5em;
+	font-weight:300;
+	color:#00a4e4;
+	background-color:#222;
+	background-image:url('images/createchange.png');
+	background-repeat: no-repeat;
+	background-position:bottom right;
+	padding:10px;
+	z-index:10;
+}
+
+.page_footer li {
+	width:100%;
+}
+
+.footer_title {
+	text-transform: uppercase;
+	font-size: .9rem;
+}
+
+.footer_nav_wrapper {
+	margin-bottom:10px;
+}
+
+.footer_sub {
+	clear:left;
+	font-size: .7rem;
+}
+
+.footer_sub a {
+	color:#666;
+	line-height: 1.75em;
+	font-weight:300;
+	text-decoration:none;
+}
+
+.footer_sub a:hover {
+	color:#fff;
+	line-height: 1.75em
+}
+
+.address {
+	font-weight:normal;
+	text-transform: uppercase;
+	font-size: .9rem;
+}
+
+.copyright {
+	font-weight:normal;
+	text-transform: uppercase;
+	font-size: .9rem;
+}
+
+
+
+@media only screen and (min-width:480px) {
+	.home {
+		max-width:470px;
+	}
+
+	.ccc_logo{
+		vertical-align:center;
+	}
+
+	.ccc_logo_img {
+		max-width:100%;
+		height:100%;
+		padding-left:10%;
+	}
+
+	.iam_logo{
+		vertical-align:center;
+	}
+
+	.iam_logo_img {
+		max-width:25%;
+		padding-right:10%;
+	}
+
+	.iam_h1 {
+		font-size:2.3rem;
+	}
+
+	.iam_h2_login {
+		font-size:2.0rem;
+	}
+
+}
+
+@media only screen and (min-width:768px) {
+	.home{
+		max-width:748px;
+	}
+
+	.main_nav{
+		position:absolute;
+		margin-top:-5px;
+		width:750px;
+		z-index:10;
+	}
+
+	.main_nav_list{
+		text-indent:10px;
+	}
+
+	.main_nav li {
+		display:inline;
+	    float:left;
+	    margin-top:-5px;
+	    width:50%;
+	    text-align:left;
+	}
+
+	.top_header {
+		position:absolute;
+		margin-top:120px;
+		margin-left:390px;
+		width:400px;
+	}
+
+	.ccc_logo_img {
+		max-width:100%;
+		height:100%;
+		padding-left:5%;
+		margin-top:10px;
+	}
+
+	.iam_logo_img {
+		max-width:30%;
+		padding-right:10%;
+	}
+
+	.iam_h1{
+		position:absolute;
+		margin-top:215px;
+		float:left;
+		font-size:2.8rem;
+	}
+
+	.iam_h2_login {
+		font-size:2.5rem;
+	}
+
+	.contain{
+		padding-top:245px;
+		margin-bottom:-50px;
+	}
+
+	.slideshow, .student_work, .events, .tweets {
+		visibility:visible;
+		display:inline;
+	}
+
+	.student_work, .events, .tweets{
+		width:62.5%;
+		float:right;
+		clear:right;
+	}
+
+	.iam_nav {
+		width:35%;
+		margin-top:25px;
+	}
+
+	.login_wrapper {
+		width:35%;
+		margin-top:30px;
+	}
+
+	.arrow_down{
+		float:none;
+		position:absolute;
+		right:0;
+	}
+
+	.page_footer{
+		position:relative;
+		margin-top:20px;
+		margin-bottom:-50px;
+		width:100%;
+	}
+
+	.footer_nav_wrapper{
+		width:30%;
+		padding:5px;
+		float:left;
+		clear:right;
+	}
+
+	.copyright{
+		float:left;
+		clear:both;
+	}
+
+}
+
+@media only screen and (min-width:1024px) {
+	.home {
+		max-width:1024px;
+	}
+
+	.main_nav{
+		position:absolute;
+		margin-top:-5px;
+		width:1024px;
+		z-index:10;
+	}
+
+	.top_header {
+		position:absolute;
+		margin-top:120px;
+		margin-left:390px;
+		width:700px;
+	}
+
+	.ccc_logo_img {
+		max-width:100%;
+		height:100%;
+		padding-left:35%;
+		margin-top:15px;
+	}
+
+	.iam_logo_img {
+		max-width:22%;
+		padding-right:10%;
+		float: right;
+	}
+
+	.gallery {
+		margin-top: 2rem;
+		background: #d1d1d1;
+		border: 10px double #d1d1d1;
+		width: 80%;
+		height: 520px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.image {
+		width: 100%;
+		border: 1px solid #000;
+		margin: auto;
+		height: 500px;
+	}
+
+}
